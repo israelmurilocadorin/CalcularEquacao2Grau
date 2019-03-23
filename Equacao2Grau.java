@@ -14,27 +14,28 @@ public class Equacao2Grau {
         return delta;
     }
 
-    public Double verificar(Double delta) {
+    public boolean verificar(Double delta) {
         if (delta < 0) {
             System.out.println("A equação não possui raiz real");
-            System.exit(0);
+            return false;
         } else {
             System.out.println("Calcular duas raízes");
-           calcularRaiz();
+            return true;
         }
     }
 
-    public static Double calcularRaiz(Double delta, Double valorA, Double valorB) {
+    public Double calcularX1(Double delta) {
         Double x1 = ((-(valorB) + Math.sqrt(delta)) / 2 * valorA);
-        Double x2 = ((-(valorB) - Math.sqrt(delta)) / 2 * valorA);
-
-        Double [] resultado = new Double[10];
-
-        resultado[0] = x1;
-        resultado[1] = x2;
-
-        return resultado;
+        return x1;
     }
 
+    public Double calcularX2(Double delta) {
+        Double x2 = ((-(valorB) - Math.sqrt(delta)) / 2 * valorA);
+        return x2;
+    }
 
+    @Override
+    public String toString() {
+
+    }
 }
