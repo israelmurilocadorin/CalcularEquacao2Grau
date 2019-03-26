@@ -10,8 +10,7 @@ public class Equacao2Grau {
     }
 
     public Double calcularDelta() {
-        Double delta = ((valorB * valorB) - (4 * valorA * valorC));
-        return delta;
+        return Math.pow(this.valorB, 2) - 4 * this.valorA * this.valorC;
     }
 
     public boolean verificar(Double delta) {
@@ -24,18 +23,25 @@ public class Equacao2Grau {
         }
     }
 
+    public Double umaRaiz(Double delta){
+        if(delta == 0){
+            Double x1 = -this.valorB /(2 * this.valorA);
+        }
+    }
+
     public Double calcularX1(Double delta) {
-        Double x1 = ((-(valorB) + Math.sqrt(delta)) / 2 * valorA);
-        return x1;
+        return (-this.valorB + Math.sqrt(delta)) / (2 * this.valorA);
     }
 
     public Double calcularX2(Double delta) {
-        Double x2 = ((-(valorB) - Math.sqrt(delta)) / 2 * valorA);
-        return x2;
+        return (-this.valorB - Math.sqrt(delta)) / (2 * this.valorA);
     }
 
-    @Override
-    public String toString() {
+    public Double calcularXv() {
+
+    }
+
+    public Double calcularYv() {
 
     }
 }
