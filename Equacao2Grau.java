@@ -15,17 +15,9 @@ public class Equacao2Grau {
 
     public boolean verificar(Double delta) {
         if (delta < 0) {
-            System.out.println("A equação não possui raiz real");
             return false;
         } else {
-            System.out.println("Calcular duas raízes");
             return true;
-        }
-    }
-
-    public Double umaRaiz(Double delta){
-        if(delta == 0){
-            Double x1 = -this.valorB /(2 * this.valorA);
         }
     }
 
@@ -36,12 +28,24 @@ public class Equacao2Grau {
     public Double calcularX2(Double delta) {
         return (-this.valorB - Math.sqrt(delta)) / (2 * this.valorA);
     }
-
     public Double calcularXv() {
 
     }
 
     public Double calcularYv() {
 
+    }
+    
+    public void calcular(){
+        Double delta = this.calcularDelta();
+        if(this.verificar(delta)){
+            //verdadeiro
+            System.out.println("Calcular duas raízes");
+            System.out.println(this.calcularX1());
+            System.out.println(this.calcularX2());
+        }else{
+            //falso
+            System.out.println("A equação não possui raiz real");
+        }
     }
 }
