@@ -3,6 +3,7 @@ public class Equacao2Grau {
     private Double valorB;
     private Double valorC;
     private Double delta;
+    private Double x1;
 
     public Equacao2Grau(Double valorA, Double valorB, Double valorC) {
         this.valorA = valorA;
@@ -28,6 +29,7 @@ public class Equacao2Grau {
         if(this.delta == 0){
             Double x1 = -this.valorB /(2 * this.valorA);
         }
+        return x1;
     }
 
     public Double calcularX1() {
