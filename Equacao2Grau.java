@@ -63,6 +63,7 @@ public class Equacao2Grau {
             return ("(-∞, +" + this.valorA + "]");
         }
     }
+
     @Override
     public String toString(){
         return ("Delta: " + this.delta +
