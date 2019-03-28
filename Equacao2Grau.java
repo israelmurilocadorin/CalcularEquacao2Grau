@@ -38,10 +38,11 @@ public class Equacao2Grau {
     }
 
     public Double calcularXv() {
-
+        return -(this.valorB / 2 * this.valorA);
     }
 
-    public Double calcularYv() {
+    public Double calcularYv(Double delta) {
 
+        return -(delta / 4 * this.valorA);
     }
 }
