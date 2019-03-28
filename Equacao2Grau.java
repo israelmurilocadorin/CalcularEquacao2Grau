@@ -58,9 +58,9 @@ public class Equacao2Grau {
 
     public String imagem() {
         if(this.valorA > 0) {
-            return ("[-" + this.valorA + ", +∞)");
+            return ("Im = {y ∈ R/y ≥ yv}");
         } else {
-            return ("(-∞, +" + this.valorA + "]");
+            return ("Im = {y ∈ R/y ≤ yv}");
         }
     }
 
