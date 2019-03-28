@@ -15,8 +15,10 @@ public class TesteEquacao2Grau {
         Equacao2Grau equacao = new Equacao2Grau(valorA, valorB, valorC);
 
         System.out.println(equacao.calcularDelta());
-        System.out.println(df.format(equacao.calcularX1(valorA, valorB)));
-        System.out.println(df.format(equacao.calcularX2(valorA, valorB)));
+        System.out.println(equacao.calcularX1());
+        System.out.println(equacao.calcularX2());
+        System.out.println();
+        System.out.println(equacao.umaRaiz());
 
 
 
