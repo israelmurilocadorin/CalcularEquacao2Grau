@@ -30,11 +30,11 @@ public class Equacao2Grau {
         }
     }
 
-    public Double calcularX1(Double delta) {
+    public Double calcularX1() {
         return (-this.valorB + Math.sqrt(delta)) / (2 * this.valorA);
     }
 
-    public Double calcularX2(Double delta) {
+    public Double calcularX2() {
         return (-this.valorB - Math.sqrt(delta)) / (2 * this.valorA);
     }
 
